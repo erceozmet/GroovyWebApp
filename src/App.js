@@ -4,6 +4,8 @@ import React, {useState} from 'react'
 import ShopList from './Pages/ShopList';
 import NavBar from './NavBar';
 import Login from './Pages/Login.js';
+import SignUp from './Pages/SignUp.js';
+
 import StickyFooter from './StickyFooter.js';
 import Landing from './Pages/Landing.js'
 import Settings from './Pages/Settings.js'
@@ -28,22 +30,28 @@ class App extends React.Component {
 
 	render(){
 		return(
-			<Router>
-				<div>
+			<>
+				<Router>
+
 				<NavBar/>
+				
+				<div className="justify">
 				<Switch>
+					<Route exact path="/"><Landing/></Route>
 					<Route path="/Settings"><Settings/></Route>
 					<Route path="/AboutUs"><AboutUs/></Route>
 					<Route path="/Login"><Login/></Route>
 					<Route path="/ShopList"><ShopList/></Route>
-					<Route path="/"><Landing/></Route>
-
+					<Route path="/SignUp"><SignUp/></Route>
+					
 				</Switch>
-				<br></br>
-				<StickyFooter />
 				</div>
+				
+				<StickyFooter />
 			</Router>
 
+			</>
+			
 
 			
 			

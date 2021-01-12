@@ -1,20 +1,24 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 
+
 const StickyFooter = () => {
   return (
-    <footer class="py-4 bg-dark mt-auto">
-    <div class="container-fluid">
-        <div class="d-flex align-items-center justify-content-between small">
-            <div class="text-muted">Copyright &copy; Your Website 2020</div>
-            <div>
-                <a href="#">Privacy Policy</a>
-                &middot;
-                <a href="#">Terms &amp; Conditions</a>
+    <div class = "footer">
+    <footer class="py-2 bg-dark">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between small">
+                <div class="text-muted">Copyright &copy; Groovy 2020</div>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    &middot;
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
             </div>
         </div>
+    </footer>
     </div>
-</footer>
+   
   );
 }
 

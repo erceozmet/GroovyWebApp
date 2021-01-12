@@ -6,11 +6,14 @@ import {Button, Card,Container, Row, Col} from 'react-bootstrap';
 class ShopList extends React.Component{
     constructor(){
         super()
+        this.ListifyItems = this.ListifyItems.bind(this)
+
         this.CuratedList = this.CuratedList.bind(this)
     }
+
     CuratedList(){
         return(
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '18rem', margin: '1em 2em 1em'}}>
             <Card.Img variant="top" src="logo192.png" />
             <Card.Body>
               <Card.Title>Card Title</Card.Title>
@@ -24,29 +27,29 @@ class ShopList extends React.Component{
         );    
     }
 
+    ListifyItems(count){
+        
+        const final = [];
+
+        for (let i = 0; i < count; i++) {
+            final.push(<Col md>{this.CuratedList()}</Col>);
+        }
+        return (
+            final
+        );
+        
+    }
     render(){
         return(
-            <Container>
-                
-                <Col>
-                    <Row >
-                        <Col>
-                        {this.CuratedList()}
-                        </Col>
-                        <Col>
-                        {this.CuratedList()}
-                        </Col>
-                    </Row>
-                    <Row >
-                        <Col>
-                        {this.CuratedList()}
-                        </Col>
-                        <Col>
-                        {this.CuratedList()}
-                        </Col>
-                    </Row>
-                </Col>
-            </Container>
+            <div>
+                <Container fluid >
+                <Row  sm = {1} md={2} lg = {3} xl = {4}>
+                    {this.ListifyItems(10)}
+                </Row>
+               
+                </Container>
+            </div>
+            
         )
     }
 

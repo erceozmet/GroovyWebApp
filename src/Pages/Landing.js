@@ -7,12 +7,13 @@ import Grid from '@material-ui/core/Grid';
 class Landing extends React.Component {
     render(){
         return(
-            <Container>
+            <Container fluid = "lg">
                 <Row>
-                    <Col>
+                    <Col >
                         <img class="img-fluid" src = "Sketchpad.png"></img>
                     </Col>
-                    <Col xs = {4}>
+                    <Col md = {5}>
+                
                         <Card>
                             <Card.Img variant="top" src="logo192.png" />
                             <Card.ImgOverlay>
@@ -24,11 +25,12 @@ class Landing extends React.Component {
                                 
                             </Card.ImgOverlay>
                         </Card>
+                        
                     </Col>
                 </Row>
                 <br></br>
-                <Row>  
-                        <Col xs = {4} lg = {4}>
+                <Row sm = {1} md={2} lg = {3}>  
+                        <Col>
                             <Card>
                                 <Card.Img src="logo192.png" alt="Card image" />
                                 <Card.ImgOverlay>
@@ -39,7 +41,7 @@ class Landing extends React.Component {
                                 </Card.ImgOverlay>
                             </Card>
                         </Col>
-                        <Col xs = {4}  lg = {4}>
+                        <Col >
                             <Card>
                             <Card.Img src="logo192.png" alt="Card image" />
                                 <Card.ImgOverlay>
@@ -50,7 +52,7 @@ class Landing extends React.Component {
                                 </Card.ImgOverlay>
                             </Card>
                         </Col>
-                        <Col xs = {4} lg = {4}>
+                        <Col>
                         <Card>
                             <Card.Img src="logo192.png" alt="Card image" />
                                 <Card.ImgOverlay>

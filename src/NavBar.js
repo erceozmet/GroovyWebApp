@@ -18,10 +18,9 @@ class NavBar extends React.Component{
 	}
 
 	render(){
-		this.log = this.state.isLogged ? "out": "in"
 	
   	return (
-		<div>
+		<>
 		
 		<Navbar bg="dark" variant="dark">
 		
@@ -31,7 +30,8 @@ class NavBar extends React.Component{
 			<Nav className="mr-auto">
 
 			<NavDropdown bg= 'primary' id="basic-nav-dropdown">
-				<NavDropdown.Item href="/Login" >Log {this.log}</NavDropdown.Item>
+				<NavDropdown.Item href="/Login" >Sign in</NavDropdown.Item>
+				<NavDropdown.Item href="/SignUp" >Sign Up</NavDropdown.Item>
 				<NavDropdown.Item href = "/AboutUs">About Us</NavDropdown.Item>
 				<NavDropdown.Item href = "/ShopList">Shop Now</NavDropdown.Item>
 				<NavDropdown.Divider />
@@ -45,7 +45,7 @@ class NavBar extends React.Component{
 		</Navbar.Collapse>
 	
   		</Navbar>
-		</div>
+		</>
 
       );
     }
