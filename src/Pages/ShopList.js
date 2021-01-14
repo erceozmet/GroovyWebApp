@@ -4,12 +4,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button, Card,Container, Row, Col} from 'react-bootstrap';
 
 class ShopList extends React.Component{
-    constructor(){
-        super()
-        this.ListifyItems = this.ListifyItems.bind(this)
+    constructor(props){
+        super(props)
+        this.state = {
+            items: []
+        }
 
+        this.ListifyItems = this.ListifyItems.bind(this)
         this.CuratedList = this.CuratedList.bind(this)
     }
+    componentDidMount() {
+        fetch("http://localhost:5000/items/list")
+        .then(response => response.json())
+        .then( responseJson=> {
+          this.setState({ items: responseJson.data });
+        },
+    )}
 
     CuratedList(){
         return(
@@ -58,3 +68,6 @@ class ShopList extends React.Component{
 }
 
 export default ShopList
+
+
+//Implement Mapping Function

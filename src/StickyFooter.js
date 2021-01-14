@@ -4,11 +4,11 @@ import { Container } from 'react-bootstrap';
 
 const StickyFooter = () => {
   return (
-    <div class = "footer">
-    <footer class="py-2 bg-dark">
-        <div class="container-fluid">
-            <div class="d-flex align-items-center justify-content-between small">
-                <div class="text-muted">Copyright &copy; Groovy 2020</div>
+    <div className = "footer">
+    <footer className="py-2 bg-dark">
+        <div className="container-fluid">
+            <div className="d-flex align-items-center justify-content-between small">
+                <div className="text-muted">Copyright &copy; Groovy 2020</div>
                 <div>
                     <a href="#">Privacy Policy</a>
                     &middot;

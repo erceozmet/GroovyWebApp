@@ -10,7 +10,7 @@ class Landing extends React.Component {
             <Container fluid = "lg">
                 <Row>
                     <Col >
-                        <img class="img-fluid" src = "Sketchpad.png"></img>
+                        <img className="img-fluid" src = "Sketchpad.png"></img>
                     </Col>
                     <Col md = {5}>
                 

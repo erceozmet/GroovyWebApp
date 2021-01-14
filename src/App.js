@@ -32,7 +32,6 @@ class App extends React.Component {
 		return(
 			<>
 				<Router>
-
 				<NavBar/>
 				
 				<div className="justify">
@@ -50,11 +49,8 @@ class App extends React.Component {
 				<StickyFooter />
 			</Router>
 
+			
 			</>
-			
-
-			
-			
 		)
 	}
 }

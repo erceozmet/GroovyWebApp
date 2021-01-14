@@ -18,14 +18,9 @@ let user_info = new Schema({
   email:{
       type: String
   },
-  password:{
-      type: String
-  },
   password_hashed:{
       type: Number
   }
- 
-
 });
 
 module.exports = mongoose.model("user_info", user_info);
