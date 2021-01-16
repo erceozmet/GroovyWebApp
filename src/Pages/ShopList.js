@@ -14,7 +14,7 @@ class ShopList extends React.Component{
     
     }
     componentDidMount() {
-        fetch("https://floating-springs-17129.herokuapp.com/list")
+        fetch("https://groovyserver.herokuapp.com/list")
         .then(response => response.json())
         .then( responseJson=> {
           this.setState({ items: responseJson.data, isLoaded: true });
