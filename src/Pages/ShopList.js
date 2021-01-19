@@ -14,9 +14,9 @@ class ShopList extends React.Component{
     
     }
     componentDidMount() {
-        fetch("https://groovyserver.herokuapp.com/list")
+        fetch("http://localhost:5000/items/list")
         .then(response => response.json())
-        .then( responseJson=> {
+        .then( responseJson => {
           this.setState({ items: responseJson.data, isLoaded: true });
         },
     )}
@@ -30,14 +30,14 @@ class ShopList extends React.Component{
                 this.state.isLoaded ? 
 
                 <Container fluid >
-                    <Row  sm = {1} md={2} lg = {3} xl = {4}>
+                    <Row  sm = {1} md={2} lg = {3} xl = {5}>
 
                         {this.state.items.map((item) => (
                             <Col>
                             <Card className = "item" id = {item._id} style={{ width: '18rem', margin: '1em 2em 1em'}}>
                                 <Card.Img variant="top" src="logo192.png" />
                                 <Card.Body>
-                                <Card.Title>{item.name}</Card.Title>
+                                <Card.Title>{item.itemName}</Card.Title>
                                 <Card.Text>
                                     {item.description}
                                 </Card.Text>
