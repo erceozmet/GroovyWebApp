@@ -12,14 +12,14 @@ class Landing extends React.Component {
                     <Col >
                         <img className="img-fluid" src = "Sketchpad.png"></img>
                     </Col>
-                    <Col md = {5}>
+                    <Col sm = {5}>
                 
                         <Card>
                             <Card.Img variant="top" src="logo192.png" />
                             <Card.ImgOverlay>
-                                <Card.Title>Weekly Deals</Card.Title>
+                                <Card.Title>Check our Store</Card.Title>
                                 <Card.Text>
-                                Here is one of todays top deals. Don't miss out or I'll chop your dick off.
+                                Check out our vintage clothes. 
                                 </Card.Text>
                                 <Button variant="dark">Purchase</Button>
                                 
@@ -29,19 +29,22 @@ class Landing extends React.Component {
                     </Col>
                 </Row>
                 <br></br>
-                <Row sm = {1} md={2} lg = {3}>  
-                        <Col>
-                            <Card>
+                <Row sm = {2} md={2} lg = {3}>  
+                        <Col sm = {6}>
+                        
+                        <Card>
                                 <Card.Img src="logo192.png" alt="Card image" />
                                 <Card.ImgOverlay>
-                                    <Card.Title>Check our Store</Card.Title>
+                                    <Card.Title>Weekly Deals</Card.Title>
                                     <Card.Text>
-                                    Check out our vintage clothes
+                                    Here is one of todays top deals. Don't miss out or I'll chop your dick off.
                                     </Card.Text>
                                 </Card.ImgOverlay>
-                            </Card>
+                        </Card>
+        
+                           
                         </Col>
-                        <Col >
+                        <Col sm = {6}>
                             <Card>
                             <Card.Img src="logo192.png" alt="Card image" />
                                 <Card.ImgOverlay>
@@ -52,7 +55,7 @@ class Landing extends React.Component {
                                 </Card.ImgOverlay>
                             </Card>
                         </Col>
-                        <Col>
+                        <Col sm = {6}>
                         <Card>
                             <Card.Img src="logo192.png" alt="Card image" />
                                 <Card.ImgOverlay>
