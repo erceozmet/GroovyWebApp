@@ -1,15 +1,18 @@
 import React, { Component, useState } from "react";
 import axios from "axios";
 
+
 export default function Login(){ 
     
     const [email,setEmail] = useInput('');
     const [password,setPassword] = useInput('');
     const [remember, setRemember] = useState(false)
+    const [loading, setLoading] = useState(false);
 
     function handleSubmit(e){
         e.preventDefault();
-        console.log(email,password)
+        
+        //Validate form
     }
     
     function useInput(initialValue){

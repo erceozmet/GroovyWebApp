@@ -4,9 +4,10 @@ import React, { Component, useState } from "react";
 export default function SignUp(){
     
     const [fname,setFname] = useInput('');
-    const [lname,setLname] = useInput('');;
+    const [lname,setLname] = useInput('');
     const [password,setPassword] = useInput('');
     const [email,setEmail] = useInput('');
+    
 
     function handleSubmit(e){
         e.preventDefault();
